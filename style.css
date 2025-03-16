@@ -5,12 +5,12 @@ body {
   font-family: 'Century Gothic', sans-serif;
   color: white;
   text-align: center;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   height: 100vh;
+  display: flex;
   flex-direction: column;
+  justify-content: center; /* Sayfanın ortasında tut */
+  align-items: center;
+  gap: 20px; /* Kutunun altına boşluk bırak */
 }
 
 /* Video Konteyneri */
@@ -46,6 +46,5 @@ body {
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
   z-index: 1;
-  position: relative;
-  top: -20px; /* İçeriği biraz yukarı çekerek alt boşluk bırak */
+  margin-bottom: 30px; /* Kutunun altına 30px boşluk ekle */
 }
