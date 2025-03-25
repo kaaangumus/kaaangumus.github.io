@@ -34,14 +34,13 @@ body {
 
 /* İçerik Kutusu */
 .box {
-  width: 450px;
-  min-height: fit-content;
+  width: 90%;
+  max-width: 450px;
   background: rgba(0, 0, 0, 0.4);
   padding: 20px;
   text-align: center;
   margin: auto;
-  margin-top: 3%;
-  margin-bottom: 3%;
+  margin-top: 5%;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
   position: relative;
@@ -50,27 +49,30 @@ body {
 
 /* Profil Resmi */
 .box-img {
-  border-radius: 40%;
-  width: 200px;
-  height: 200px;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
 }
 
 /* Başlıklar */
 .box h1 {
-  font-size: 40px;
-  letter-spacing: 4px;
+  font-size: 32px;
+  letter-spacing: 2px;
   font-weight: 100;
 }
 
 .box h5 {
-  font-size: 20px;
-  letter-spacing: 3px;
+  font-size: 18px;
+  letter-spacing: 2px;
   font-weight: 100;
 }
 
 /* Paragraf */
 .box p {
   text-align: justify;
+  font-size: 14px;
+  line-height: 1.5;
 }
 
 /* Liste ve Bağlantılar */
@@ -88,10 +90,39 @@ ul {
 .box li a {
   color: white;
   text-decoration: none;
-  font-size: 60px;
+  font-size: 40px;
   transition: all ease-in-out 250ms;
 }
 
 .box li a:hover {
   color: #b9b9b9;
+}
+
+/* Mobil Uyumluluk */
+@media (max-width: 768px) {
+  .box {
+    width: 90%;
+    margin-top: 10%;
+  }
+
+  .box-img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .box h1 {
+    font-size: 28px;
+  }
+
+  .box h5 {
+    font-size: 16px;
+  }
+
+  .box p {
+    font-size: 13px;
+  }
+
+  .box li a {
+    font-size: 30px;
+  }
 }
